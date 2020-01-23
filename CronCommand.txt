@@ -1,0 +1,8 @@
+-> COMMAND _____________Insert this command in cron jobs as per your time frame
+
+"php -q /home/ddhindi/backup.php ; mysqldump --opt -Q -u ddhindi -p'QGR_UPaK&s=D' --all-databases > /home/ddhindi/backup/databases.sql ; tar -cvpzf /home/ddhindi/backup/files.tar.gz /home/ddhindi/public_html"
+
+NOTES________________________________
+1)runs backup.php 
+2) Backups DB data and save as "databases.sql"
+3) Backups public_html and save as "files.tar.gz"
